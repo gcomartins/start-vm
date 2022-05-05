@@ -37,12 +37,14 @@ if [ \"$versao\" -eq 7 ]
 then
 echo \"escolheu a versão 7, preparando para instalar\"
 apt-get install oracle-java7-installer -y
+apt install default-jre -y
 clear
 echo \"java instalado versão 7\"
 elif [ \"$versao\" -eq 8 ]
 then
 echo \"escolheu a versão 8, preparando para instalar\"
 apt-get install oracle-java8-installer -y
+apt install default-jre -y
 clear
 echo \"java instalado versão 8\"
 else
