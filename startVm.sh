@@ -9,8 +9,6 @@ sudo apt upgrade && sudo apt update -y
 
 echo "Você deseja instalar interface gráfica?(y/n)"
 
-read inst
-if [ \"$inst\" == \"y\" ]
 then sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
 
 echo "Instalação Java..."
@@ -27,7 +25,7 @@ then
 echo \"voce escolheu instalar o java\"
 echo \"instalado repositorio\"
 sleep 2
-add-apt-repository ppa:webupd8team/java -y
+sudo git clone https://github.com/gcomartins/DataCat-App.git
 clear
 echo \"Atualizando repositorio\"
 sleep 2
