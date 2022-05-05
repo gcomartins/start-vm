@@ -9,8 +9,8 @@ sudo apt upgrade && sudo apt update -y
 
 echo "Você deseja instalar interface gráfica?(y/n)"
 
-read simnao
-if [ \"$simnao\" == \"y\" ]
+read inst
+if [ \"$inst\" == \"y\" ]
 then sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
 
 echo "Instalação Java..."
