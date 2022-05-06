@@ -5,11 +5,15 @@ sudo usermod -aG sudo ubuntu
 echo "Defina a senha do usuário Ubuntu"
 sudo passwd ubuntu
 
-sudo apt upgrade && sudo apt update -y
+echo "alias atualizar='sudo apt update && sudo apt upgrade -y'" >> $HOME/.bash_aliases
 
-echo "Você deseja instalar interface gráfica?(y/n)"
+cd
 
-then sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
+source .bash_aliases
+
+atualizar
+
+# sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
 
 # echo "Instalação Java..."
 # java -version
