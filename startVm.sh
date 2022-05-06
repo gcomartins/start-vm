@@ -11,7 +11,7 @@
 
 # sudo apt-get install openjdk-8-jre
 
-cd /Desktop
+cd ..
 
 sudo git clone https://github.com/gcomartins/DataCat-App.git
 
