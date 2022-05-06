@@ -1,19 +1,23 @@
 #!/bin/bash
-# echo "Definindo permissão do usuário ubuntu..."
-# sudo usermod -aG sudo ubuntu
+echo "Definindo permissão do usuário ubuntu..."
+sudo usermod -aG sudo ubuntu
 
-# echo "Defina a senha do usuário Ubuntu"
-# sudo passwd ubuntu
+echo "Defina a senha do usuário Ubuntu"
+sudo passwd ubuntu
 
-# sudo apt upgrade && sudo apt update -y
+sudo apt upgrade && sudo apt update -y
 
-# sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
+sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
 
-# sudo apt-get install openjdk-8-jre
+sudo apt install default-jre
 
 cd ..
 
 sudo git clone https://github.com/gcomartins/DataCat-App.git
+
+cd DataCat-App
+
+java -jar login-java-swing-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 # echo "Instalação Java..."
 # java -version
