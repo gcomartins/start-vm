@@ -5,15 +5,15 @@ sudo usermod -aG sudo ubuntu
 echo "Defina a senha do usuário Ubuntu"
 sudo passwd ubuntu
 
-echo "alias atualizar='sudo apt update && sudo apt upgrade -y'" >> $HOME/.bash_aliases
+sudo apt upgrade && sudo apt update -y
 
-cd
+sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
 
-source .bash_aliases
+sudo apt-get install openjdk-8-jre
 
-atualizar
+cd /home
 
-# sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
+# sudo git clone https://github.com/gcomartins/DataCat-App.git
 
 # echo "Instalação Java..."
 # java -version
