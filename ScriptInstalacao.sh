@@ -93,13 +93,9 @@ if [ \"$inst10\" == \"n\"  ]
     
     echo  "$(tput setaf 10)[bot]:$(tput setaf 7) Agora estarei instalando a aplicação em seu ubuntu."
     
-    cd DataCat-App
-    
     # mv login-java-swing-1.0-SNAPSHOT-jar-with-dependencies.jar /home/Desktop/datacat
     sleep 4
     cd ..
-
-    rm -r DataCat-App -f
 
      else
 
@@ -112,6 +108,8 @@ else
 echo  "$(tput setaf 10)[bot]:$(tput setaf 7) Você já tem nossa aplicação"
 
 fi
+
+cd ..
 
  java -jar login-java-swing-1.0-SNAPSHOT-jar-with-dependencies.jar
 
