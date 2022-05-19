@@ -1,15 +1,15 @@
 #!/bin/bash
 
-#Usuário 
-echo "Adicionar usuário"
-sudo adduser datacat
-#senha
-echo "Colocar senha usuário"
-sudo passwd datacat
+# #Usuário 
+# echo "Adicionar usuário"
+# sudo adduser datacat
+# #senha
+# echo "Colocar senha usuário"
+# sudo passwd datacat
 
-su datacat
+# su datacat
 
-
+sudo usermod -aG sudo datacat
 
 #Instalação do Java
 	
@@ -98,7 +98,7 @@ if [ \"$inst10\" == \"n\"  ]
     
     cd DataCat-App
     
-    mv login-java-swing-1.0-SNAPSHOT-jar-with-dependencies.jar /home/Desktop.datacat
+    mv login-java-swing-1.0-SNAPSHOT-jar-with-dependencies.jar /home/Desktop/datacat
     sleep 4
     cd ..
 
