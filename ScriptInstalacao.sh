@@ -84,7 +84,7 @@ if [ \"$inst10\" == \"n\"  ]
 
     sleep 4
     cd /home/ubuntu
-    wget -o  javac.jar https://github.com/gcomartins/DataCat-App/blob/main/login-java-swing-1.0-SNAPSHOT-jar-with-dependencies.jar?raw=true
+    wget -o  DataCatApp.jar https://github.com/gcomartins/DataCat-App/blob/main/login-java-swing-1.0-SNAPSHOT-jar-with-dependencies.jar?raw=true
     sleep 4
 
     echo  "$(tput setaf 10)[bot]:$(tput setaf 7) Pronto! Repositório instalado com sucesso."
@@ -111,5 +111,5 @@ fi
 
 cd ..
 
- java -jar login-java-swing-1.0-SNAPSHOT-jar-with-dependencies.jar
+ java -jar DataCatApp.jar
 
