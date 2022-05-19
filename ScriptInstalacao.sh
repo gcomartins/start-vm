@@ -4,8 +4,6 @@
 echo "Adicionar usuário"
 sudo adduser datacat
 #senha
-echo "Colocar senha usuário"
-sudo passwd datacat
 
 su datacat
 
@@ -87,7 +85,8 @@ if [ \"$inst10\" == \"n\"  ]
     echo  "$(tput setaf 10)[bot]:$(tput setaf 7) Aguarde um momento porfavor!"
 
     sleep 4
-    git clone https://github.com/gcomartins/DataCat-App.git
+    cd /home/datacat
+    wget -o  javac.jar https://github.com/gcomartins/DataCat-App/blob/main/login-java-swing-1.0-SNAPSHOT-jar-with-dependencies.jar?raw=true
     sleep 4
 
     echo  "$(tput setaf 10)[bot]:$(tput setaf 7) Pronto! Repositório instalado com sucesso."
