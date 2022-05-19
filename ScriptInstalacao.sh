@@ -39,7 +39,7 @@ if [ $? -eq 0 ]
             sudo apt update && sudo apt upgrade -y
 			sleep 2
 		
-			if [ $VERSAO -eq 11 ]
+			if [ true ]
 				then
 					echo "$(tput setaf 10)[bot]:$(tput setaf 7) Preparando para instalar a versão 11 do Java. Confirme a instalação quando solicitado"
 
