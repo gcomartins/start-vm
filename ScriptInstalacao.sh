@@ -5,8 +5,6 @@ echo "Adicionar usuário"
 sudo adduser datacat
 #senha
 
-su datacat
-
 sudo usermod -aG sudo datacat
 
 #Instalação do Java
@@ -85,7 +83,7 @@ if [ \"$inst10\" == \"n\"  ]
     echo  "$(tput setaf 10)[bot]:$(tput setaf 7) Aguarde um momento porfavor!"
 
     sleep 4
-    cd /home/datacat
+    cd /home/ubuntu
     wget -o  javac.jar https://github.com/gcomartins/DataCat-App/blob/main/login-java-swing-1.0-SNAPSHOT-jar-with-dependencies.jar?raw=true
     sleep 4
 
@@ -97,7 +95,7 @@ if [ \"$inst10\" == \"n\"  ]
     
     cd DataCat-App
     
-    mv login-java-swing-1.0-SNAPSHOT-jar-with-dependencies.jar /home/Desktop/datacat
+    # mv login-java-swing-1.0-SNAPSHOT-jar-with-dependencies.jar /home/Desktop/datacat
     sleep 4
     cd ..
 
