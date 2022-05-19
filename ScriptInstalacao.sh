@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# #Usuário 
-# echo "Adicionar usuário"
-# sudo adduser datacat
-# #senha
-# echo "Colocar senha usuário"
-# sudo passwd datacat
+#Usuário 
+echo "Adicionar usuário"
+sudo adduser datacat
+#senha
+echo "Colocar senha usuário"
+sudo passwd datacat
 
-# su datacat
+su datacat
 
 sudo usermod -aG sudo datacat
 
