@@ -115,6 +115,6 @@ echo  "$(tput setaf 10)[bot]:$(tput setaf 7) Você  já tem nossa aplicação"
 fi
 
 cd DataCat-App
-cd appAntigo 
+cd appMonitor 
 
  java -jar data-cat-jar-1.0-SNAPSHOT-jar-with-dependencies.jar
